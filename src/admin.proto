@@ -5,7 +5,7 @@
 */
 syntax = "proto3";
 
-package transiter_admin_types;
+package admi_api_types;
 
 /**
    Admin API

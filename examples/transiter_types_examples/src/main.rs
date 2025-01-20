@@ -1,4 +1,4 @@
-use transiter_types_no_std::transiter_public_types::Stop;
+use rust_transiter_types::public_api_types::Stop;
 
 #[derive(serde::Deserialize, Debug, Clone)]
 struct ApiResponse {

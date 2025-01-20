@@ -989,6 +989,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "rust_transiter_types"
+version = "0.1.0"
+dependencies = [
+ "prost 0.13.4",
+ "serde",
+ "serde-json-core",
+ "tonic-build",
+]
+
+[[package]]
 name = "rustc-demangle"
 version = "0.1.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1382,18 +1392,8 @@ name = "transiter_types_examples"
 version = "0.1.0"
 dependencies = [
  "reqwest",
+ "rust_transiter_types",
  "serde",
- "transiter_types_no_std",
-]
-
-[[package]]
-name = "transiter_types_no_std"
-version = "0.1.0"
-dependencies = [
- "prost 0.13.4",
- "serde",
- "serde-json-core",
- "tonic-build",
 ]
 
 [[package]]

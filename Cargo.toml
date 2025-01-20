@@ -1,5 +1,5 @@
 [package]
-name = "transiter_types_no_std"
+name = "rust_transiter_types"
 version = "0.1.0"
 edition = "2021"
 authors = ["Diego Aristides Marcano Aranguren"]

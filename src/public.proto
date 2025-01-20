@@ -63,7 +63,7 @@
 */
 syntax = "proto3";
 
-package transiter_public_types;
+package public_api_types;
 
 // Request payload for the entrypoint endpoint.
 message EntrypointRequest {}

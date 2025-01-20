@@ -1,11 +1,11 @@
 #![no_std]
-pub mod transiter_admin_types;
-pub mod transiter_public_types;
+pub mod public_api_types;
+pub mod admi_api_types;
 
 
 use serde::{Deserialize, Deserializer};
 
-use crate::transiter_public_types::{list_stops_request::SearchMode, stop::Type };
+use crate::public_api_types::{list_stops_request::SearchMode, stop::Type };
 
 
 impl SearchMode {
