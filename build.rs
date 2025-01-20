@@ -5,8 +5,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     tonic_build::configure()
         .btree_map(&["."])
-        .type_attribute(".", "#[derive(serde::Serialize, serde::Deserialize)]")
-        .out_dir(out_dir)
+        .type_attribute(".",  "#[derive(serde::Serialize, serde::Deserialize)]")
+        // default message vectors to be empty
+        .message_attribute(".",  "#[serde(default)]")
+        // TODO: Add support for other enums
+        .field_attribute(".transiter_public_types.Stop.type", 
+    "#[serde(deserialize_with = \"super::Type::from_str\")]").out_dir(out_dir)
         .compile(&vec!["src/public.proto", "src/admin.proto"], &["./proto"])?;
     Ok(())
 }
