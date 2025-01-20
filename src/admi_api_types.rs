@@ -2,6 +2,7 @@
 /// Request payload for the get system config endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetSystemConfigRequest {
@@ -12,6 +13,7 @@ pub struct GetSystemConfigRequest {
 /// Request payload for the install or update system endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct InstallOrUpdateSystemRequest {
@@ -41,6 +43,7 @@ pub mod install_or_update_system_request {
 /// YamlConfig contains a Transiter system configuration in YAML format.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct YamlConfig {
@@ -65,6 +68,7 @@ pub struct YamlConfig {
 /// Response payload for the install of update system endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct InstallOrUpdateSystemReply {
@@ -80,6 +84,7 @@ pub struct InstallOrUpdateSystemReply {
 /// Request payload for the delete system endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DeleteSystemRequest {
@@ -90,12 +95,14 @@ pub struct DeleteSystemRequest {
 /// Response payload for the delete system endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DeleteSystemReply {}
 /// Configuration for a system.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SystemConfig {
@@ -112,6 +119,7 @@ pub struct SystemConfig {
 /// Configuration for a transit system data feed.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct FeedConfig {
@@ -201,6 +209,7 @@ pub mod feed_config {
     /// Additional options for NYCT Subway CSV feeds.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct NyctSubwayOptions {
@@ -272,6 +281,7 @@ pub mod feed_config {
 /// Message describing additional options for the GTFS realtime feeds.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GtfsRealtimeOptions {
@@ -307,6 +317,7 @@ pub mod gtfs_realtime_options {
     /// Options for the NYCT trips extension.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct NyctTripsOptions {
@@ -324,6 +335,7 @@ pub mod gtfs_realtime_options {
     /// Options for the NYCT alerts extension.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct NyctAlertsOptions {
@@ -445,6 +457,7 @@ pub mod gtfs_realtime_options {
 /// Description of the configuration for a collection of service maps.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ServiceMapConfig {
@@ -473,6 +486,7 @@ pub mod service_map_config {
     /// Description of options relevant for static service maps only.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct StaticOptions {
@@ -538,6 +552,7 @@ pub mod service_map_config {
 /// Request payload for the update feed endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct UpdateFeedRequest {
@@ -555,6 +570,7 @@ pub struct UpdateFeedRequest {
 /// Description of a feed update operation.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct FeedUpdate {
@@ -690,6 +706,7 @@ pub mod feed_update {
 /// Response payload for the update feed endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct UpdateFeedReply {
@@ -700,12 +717,14 @@ pub struct UpdateFeedReply {
 /// Request payload for the get scheduler status endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetSchedulerStatusRequest {}
 /// Response payload for the get scheduler status endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetSchedulerStatusReply {
@@ -718,6 +737,7 @@ pub mod get_scheduler_status_reply {
     /// Description of the status of one feed.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct FeedStatus {
@@ -745,24 +765,28 @@ pub mod get_scheduler_status_reply {
 /// Request payload for the reset scheduler endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResetSchedulerRequest {}
 /// Response payload for the reset scheduler endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResetSchedulerReply {}
 /// Request payload for the get log level endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetLogLevelRequest {}
 /// Response payload for the get log level endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetLogLevelReply {
@@ -773,6 +797,7 @@ pub struct GetLogLevelReply {
 /// Request payload for the set log level endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SetLogLevelRequest {
@@ -783,6 +808,7 @@ pub struct SetLogLevelRequest {
 /// Response payload for the set log level endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SetLogLevelReply {}

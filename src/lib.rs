@@ -1,8 +1,9 @@
-#![no_std]
+// #![no_std]
 pub mod admi_api_types;
 pub mod public_api_types;
 
 use serde::{Deserialize, Deserializer};
+use serde_aux::field_attributes::deserialize_number_from_string;
 
 use crate::public_api_types::{
     alert::{Cause, Effect},
@@ -12,6 +13,14 @@ use crate::public_api_types::{
     transfer::Type as TransferType,
     vehicle::{CongestionLevel, CurrentStatus, OccupancyStatus},
 };
+
+pub fn callback_i64_to_option<'de, D>(deserializer: D) -> Result<Option<i64>, D::Error>
+where
+    D: Deserializer<'de>,
+{
+    let result = deserialize_number_from_string::<i64, D>(deserializer)?;
+    Ok(Some(result))   
+}
 
 impl TransferType {
     pub fn from_str<'de, D>(deserializer: D) -> Result<i32, D::Error>

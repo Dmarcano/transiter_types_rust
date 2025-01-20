@@ -9,13 +9,27 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .btree_map(&["."])
         .type_attribute(".", "#[derive(serde::Serialize, serde::Deserialize)]")
         // default message vectors to be empty
-        .message_attribute(".", "#[serde(default)]");
+        .message_attribute(".", "#[serde(default)]")
+        .message_attribute(".", "#[serde(rename_all = \"camelCase\")]")
+        ;
         // TODO: Add support for other enums
         builder = add_enum_serialization(builder);
+        builder = add_int_serialization(builder);
         builder.out_dir(out_dir)
         .compile(&vec!["src/public.proto", "src/admin.proto"], &["./proto"])?;
     Ok(())
 }
+
+pub fn add_int_serialization(mut builder: Builder) -> Builder {
+    builder = builder
+    .field_attribute(
+        ".public_api_types.StopTime.EstimatedTime.time",
+        "#[serde( default = \"::core::option::Option::default\" , deserialize_with = \"crate::callback_i64_to_option\")]",
+    );
+    
+    builder
+}
+
 
 pub fn add_enum_serialization(mut builder: Builder) -> Builder {
     builder = builder

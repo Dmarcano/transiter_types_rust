@@ -2,12 +2,14 @@
 /// Request payload for the entrypoint endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct EntrypointRequest {}
 /// Response payload for the entrypoint endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct EntrypointReply {
@@ -23,6 +25,7 @@ pub mod entrypoint_reply {
     /// Message containing version information about a Transiter binary.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct TransiterDetails {
@@ -37,12 +40,14 @@ pub mod entrypoint_reply {
 /// Request payload for the list systems endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListSystemsRequest {}
 /// Response payload for the list systems endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListSystemsReply {
@@ -53,6 +58,7 @@ pub struct ListSystemsReply {
 /// Request payload for the get system endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetSystemRequest {
@@ -65,6 +71,7 @@ pub struct GetSystemRequest {
 /// Request payload for the list agencies endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListAgenciesRequest {
@@ -77,6 +84,7 @@ pub struct ListAgenciesRequest {
 /// Response payload for the list agencies endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListAgenciesReply {
@@ -87,6 +95,7 @@ pub struct ListAgenciesReply {
 /// Request payload for the get agency endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetAgencyRequest {
@@ -104,6 +113,7 @@ pub struct GetAgencyRequest {
 /// Request payload for the list stops endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListStopsRequest {
@@ -217,6 +227,7 @@ pub mod list_stops_request {
 /// Response payload for the list stops endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListStopsReply {
@@ -230,6 +241,7 @@ pub struct ListStopsReply {
 /// Request payload for the get stop endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetStopRequest {
@@ -263,6 +275,7 @@ pub struct GetStopRequest {
 /// Request payload for the list routes endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListRoutesRequest {
@@ -287,6 +300,7 @@ pub struct ListRoutesRequest {
 /// Response payload for the list routes endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListRoutesReply {
@@ -297,6 +311,7 @@ pub struct ListRoutesReply {
 /// Request payload for the get route endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetRouteRequest {
@@ -326,6 +341,7 @@ pub struct GetRouteRequest {
 /// Request payload for the list trips endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListTripsRequest {
@@ -343,6 +359,7 @@ pub struct ListTripsRequest {
 /// Response payload for the list trips endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListTripsReply {
@@ -353,6 +370,7 @@ pub struct ListTripsReply {
 /// Request payload for the list alerts endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListAlertsRequest {
@@ -372,6 +390,7 @@ pub struct ListAlertsRequest {
 /// Response payload for the list alerts endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListAlertsReply {
@@ -382,6 +401,7 @@ pub struct ListAlertsReply {
 /// Request payload for the get alert endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetAlertRequest {
@@ -399,6 +419,7 @@ pub struct GetAlertRequest {
 /// Request payload for the get trip endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetTripRequest {
@@ -421,6 +442,7 @@ pub struct GetTripRequest {
 /// Request payload for the list feeds endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListFeedsRequest {
@@ -431,6 +453,7 @@ pub struct ListFeedsRequest {
 /// Response payload for the list feeds endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListFeedsReply {
@@ -441,6 +464,7 @@ pub struct ListFeedsReply {
 /// Request payload for the get feed endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetFeedRequest {
@@ -458,6 +482,7 @@ pub struct GetFeedRequest {
 /// Request payload for the list transfers endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListTransfersRequest {
@@ -468,6 +493,7 @@ pub struct ListTransfersRequest {
 /// Response payload for the list transfers endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListTransfersReply {
@@ -478,6 +504,7 @@ pub struct ListTransfersReply {
 /// Request payload for the get transfer endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetTransferRequest {
@@ -495,6 +522,7 @@ pub struct GetTransferRequest {
 /// Request payload for the list vehicles endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListVehiclesRequest {
@@ -583,6 +611,7 @@ pub mod list_vehicles_request {
 /// Response payload for the list vehicles endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListVehiclesReply {
@@ -596,6 +625,7 @@ pub struct ListVehiclesReply {
 /// Request payload for the get vehicle endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetVehicleRequest {
@@ -613,6 +643,7 @@ pub struct GetVehicleRequest {
 /// Request payload for the list shapes endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListShapesRequest {
@@ -640,6 +671,7 @@ pub struct ListShapesRequest {
 /// Response payload for the list shapes endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ListShapesReply {
@@ -653,6 +685,7 @@ pub struct ListShapesReply {
 /// Request payload for the get shape endpoint.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetShapeRequest {
@@ -666,6 +699,7 @@ pub struct GetShapeRequest {
 /// The System resource.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct System {
@@ -703,6 +737,7 @@ pub mod system {
     /// Reference type for the system resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -777,6 +812,7 @@ pub mod system {
 /// This message contains generic metadata that applies to all resources.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Resource {
@@ -796,6 +832,7 @@ pub struct Resource {
 /// This message only exists to support API discoverability.
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ChildResources {
@@ -822,6 +859,7 @@ pub struct ChildResources {
 ///    and computed fields (service maps).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Stop {
@@ -908,6 +946,7 @@ pub mod stop {
     /// message and the associated field.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct ServiceMap {
@@ -926,6 +965,7 @@ pub mod stop {
     /// The data in it comes from the MTA's [subway stations feed](<https://data.ny.gov/Transportation/MTA-Subway-Stations/39hk-dx4f>).
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct HeadsignRule {
@@ -945,6 +985,7 @@ pub mod stop {
     /// Reference type for the stop resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -1019,6 +1060,7 @@ pub mod stop {
 /// message](<https://gtfs.org/realtime/reference/#message-stoptimeupdate>).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct StopTime {
@@ -1069,11 +1111,16 @@ pub mod stop_time {
     /// message](<https://gtfs.org/realtime/reference/#message-stoptimeevent>).
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct EstimatedTime {
         /// Time of arrival.
         #[prost(int64, optional, tag = "1")]
+        #[serde(
+            default = "::core::option::Option::default",
+            deserialize_with = "crate::callback_i64_to_option"
+        )]
         pub time: ::core::option::Option<i64>,
         /// Delay from the scheduled time.
         #[prost(int32, optional, tag = "2")]
@@ -1089,6 +1136,7 @@ pub mod stop_time {
 /// specification](<https://gtfs.org/realtime/reference/#message-tripupdate>).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Trip {
@@ -1131,6 +1179,7 @@ pub mod trip {
     /// Reference type for the trip resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -1168,6 +1217,7 @@ pub mod trip {
 /// specification](<https://gtfs.org/realtime/reference/#message-vehicleposition>).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Vehicle {
@@ -1222,6 +1272,7 @@ pub mod vehicle {
     /// Reference type for the vehicle resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -1383,6 +1434,7 @@ pub mod vehicle {
 ///    and computed fields (estimated headway, service maps).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Route {
@@ -1466,6 +1518,7 @@ pub mod route {
     /// message and the associated field.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct ServiceMap {
@@ -1481,6 +1534,7 @@ pub mod route {
     /// Reference type for the route resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -1624,6 +1678,7 @@ pub mod route {
 ///    [admin API's GetSystemConfig endpoint](admin.md#get-the-config-for-a-system).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Feed {
@@ -1659,6 +1714,7 @@ pub mod feed {
     /// Reference type for the feed resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -1681,6 +1737,7 @@ pub mod feed {
 /// Transiter adds some additional related fields (routes, alerts).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Agency {
@@ -1734,6 +1791,7 @@ pub mod agency {
     /// Reference type for the agency resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -1757,6 +1815,7 @@ pub mod agency {
 /// specification](<https://gtfs.org/realtime/reference/#message-alert>).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Alert {
@@ -1808,6 +1867,7 @@ pub mod alert {
     /// specification](<https://gtfs.org/realtime/reference/#message-timerange>).
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct ActivePeriod {
@@ -1826,6 +1886,7 @@ pub mod alert {
     /// specification](<https://gtfs.org/realtime/reference/#message-translation>).
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Text {
@@ -1839,6 +1900,7 @@ pub mod alert {
     /// Reference type for the agency resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
@@ -2002,6 +2064,7 @@ pub mod alert {
 /// specification](<https://gtfs.org/schedule/reference/#transferstxt>).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Transfer {
@@ -2085,6 +2148,7 @@ pub mod transfer {
 /// specification](<https://gtfs.org/schedule/reference/#shapestxt>).
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
+#[serde(rename_all = "camelCase")]
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Shape {
@@ -2100,6 +2164,7 @@ pub mod shape {
     /// A point within the shape.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct ShapePoint {
@@ -2116,6 +2181,7 @@ pub mod shape {
     /// Reference type for the shape resource.
     #[derive(serde::Serialize, serde::Deserialize)]
     #[serde(default)]
+    #[serde(rename_all = "camelCase")]
     #[allow(clippy::derive_partial_eq_without_eq)]
     #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct Reference {
