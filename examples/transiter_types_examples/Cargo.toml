@@ -5,5 +5,5 @@ edition = "2021"
 
 [dependencies]
 reqwest = {version = "0.12.12", features = ["blocking", "json"]}
-rust_transiter_types ={ path = "../../." }
+rust_transiter_types ={ version = "*" , path = "../../." }
 serde = { version = "1.0.152", features = ["derive"] }
