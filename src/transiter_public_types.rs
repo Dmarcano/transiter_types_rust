@@ -164,9 +164,8 @@ pub struct ListStopsRequest {
 /// Nested message and enum types in `ListStopsRequest`.
 pub mod list_stops_request {
     /// The possible search modes when listing stops.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -175,7 +174,7 @@ pub mod list_stops_request {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum SearchMode {
@@ -513,9 +512,8 @@ pub struct ListVehiclesRequest {
 /// Nested message and enum types in `ListVehiclesRequest`.
 pub mod list_vehicles_request {
     /// Available search modes when listing vehicles.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -524,7 +522,7 @@ pub mod list_vehicles_request {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum SearchMode {
@@ -680,9 +678,8 @@ pub mod system {
         pub resource: ::core::option::Option<super::Resource>,
     }
     /// Enum describing the possible statuses of a system.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -691,7 +688,7 @@ pub mod system {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Status {
@@ -922,9 +919,8 @@ pub mod stop {
         pub name: ::core::option::Option<::prost::alloc::string::String>,
     }
     /// Enum describing the possible stop types
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -933,7 +929,7 @@ pub mod stop {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Type {
@@ -1185,9 +1181,8 @@ pub mod vehicle {
         pub resource: ::core::option::Option<super::Resource>,
     }
     /// Corresponds to [VehicleStopStatus](<https://gtfs.org/realtime/reference/#enum-vehiclestopstatus>).
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1196,7 +1191,7 @@ pub mod vehicle {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum CurrentStatus {
@@ -1227,9 +1222,8 @@ pub mod vehicle {
         }
     }
     /// Corresponds to [CongestionLevel](<https://gtfs.org/realtime/reference/#enum-congestionlevel>).
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1238,7 +1232,7 @@ pub mod vehicle {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum CongestionLevel {
@@ -1275,9 +1269,8 @@ pub mod vehicle {
         }
     }
     /// Corresponds to [OccupancyStatus](<https://gtfs.org/realtime/reference/#enum-occupancystatus>).
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1286,7 +1279,7 @@ pub mod vehicle {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum OccupancyStatus {
@@ -1447,9 +1440,8 @@ pub mod route {
         pub color: ::prost::alloc::string::String,
     }
     /// Enum describing possible policies for continuous pickup or drop-off.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1458,7 +1450,7 @@ pub mod route {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum ContinuousPolicy {
@@ -1497,9 +1489,8 @@ pub mod route {
     }
     /// Enum describing possible route types.
     /// This corresponds to possible values of the `route_type` column in `routes.txt`.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1508,7 +1499,7 @@ pub mod route {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Type {
@@ -1802,9 +1793,8 @@ pub mod alert {
     /// Cause is the same as the [cause enum in the GTFS realtime
     /// specification](<https://gtfs.org/realtime/reference/#enum-cause>),
     /// except `UNKNOWN_CAUSE` has value 0 instead of 1 to satisfy protobuf3 requirements.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1813,7 +1803,7 @@ pub mod alert {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Cause {
@@ -1873,9 +1863,8 @@ pub mod alert {
     /// Effect is the same as the [effect enum in the GTFS realtime
     /// specification](<https://gtfs.org/realtime/reference/#enum-effect>),
     /// except `UNKNOWN_EFFECT` has value 0 instead of 1 to satisfy protobuf3 requirements.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1884,7 +1873,7 @@ pub mod alert {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Effect {
@@ -1976,9 +1965,8 @@ pub mod transfer {
     /// Types of transfers.
     /// The supported types are described in the documentation for the `transfer_type` column
     /// in the GTFS static `transfers.txt` table.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -1987,7 +1975,7 @@ pub mod transfer {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Type {

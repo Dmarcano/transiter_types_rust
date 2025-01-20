@@ -212,9 +212,8 @@ pub mod feed_config {
     }
     /// Transiter runs a background task called the scheduler which performs feed updates automatically.
     /// A scheduling policy determines when the scheduler will perform feed updates for this feed.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -223,7 +222,7 @@ pub mod feed_config {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum SchedulingPolicy {
@@ -272,11 +271,15 @@ pub struct GtfsRealtimeOptions {
     /// Options for the NYCT trips extension.
     /// Ignored if the extension field is not `NYCT_TRIPS`.
     #[prost(message, optional, tag = "2")]
-    pub nyct_trips_options: ::core::option::Option<gtfs_realtime_options::NyctTripsOptions>,
+    pub nyct_trips_options: ::core::option::Option<
+        gtfs_realtime_options::NyctTripsOptions,
+    >,
     /// Options for the NYCT alerts extension.
     /// Ignored if the extension field is not `NYCT_ALERTS`.
     #[prost(message, optional, tag = "3")]
-    pub nyct_alerts_options: ::core::option::Option<gtfs_realtime_options::NyctAlertsOptions>,
+    pub nyct_alerts_options: ::core::option::Option<
+        gtfs_realtime_options::NyctAlertsOptions,
+    >,
     /// If true, stop sequences in the GTFS realtime feed data are ignored, and
     /// alternative stop sequences are generated and assigned by Transiter.
     /// This setting is designed for buggy GTFS realtime feeds in which
@@ -338,9 +341,8 @@ pub mod gtfs_realtime_options {
     /// Nested message and enum types in `NyctAlertsOptions`.
     pub mod nyct_alerts_options {
         /// Available deduplication policies for elevator alerts.
+        #[derive(serde::Serialize, serde::Deserialize)]
         #[derive(
-            serde::Serialize,
-            serde::Deserialize,
             Clone,
             Copy,
             Debug,
@@ -349,7 +351,7 @@ pub mod gtfs_realtime_options {
             Hash,
             PartialOrd,
             Ord,
-            ::prost::Enumeration,
+            ::prost::Enumeration
         )]
         #[repr(i32)]
         pub enum ElevatorAlertsDeduplicationPolicy {
@@ -364,7 +366,9 @@ pub mod gtfs_realtime_options {
             /// (if the ProtoBuf definition does not change) and safe for programmatic use.
             pub fn as_str_name(&self) -> &'static str {
                 match self {
-                    ElevatorAlertsDeduplicationPolicy::NoDeduplication => "NO_DEDUPLICATION",
+                    ElevatorAlertsDeduplicationPolicy::NoDeduplication => {
+                        "NO_DEDUPLICATION"
+                    }
                     ElevatorAlertsDeduplicationPolicy::DeduplicateInStation => {
                         "DEDUPLICATE_IN_STATION"
                     }
@@ -385,9 +389,8 @@ pub mod gtfs_realtime_options {
         }
     }
     /// Supported GTFS realtime extensions.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -396,7 +399,7 @@ pub mod gtfs_realtime_options {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Extension {
@@ -478,9 +481,8 @@ pub mod service_map_config {
         pub days: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
     }
     /// Source describes the possible sources for service maps.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -489,7 +491,7 @@ pub mod service_map_config {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Source {
@@ -589,9 +591,8 @@ pub struct FeedUpdate {
 /// Nested message and enum types in `FeedUpdate`.
 pub mod feed_update {
     /// Status of a feed update.
+    #[derive(serde::Serialize, serde::Deserialize)]
     #[derive(
-        serde::Serialize,
-        serde::Deserialize,
         Clone,
         Copy,
         Debug,
@@ -600,7 +601,7 @@ pub mod feed_update {
         Hash,
         PartialOrd,
         Ord,
-        ::prost::Enumeration,
+        ::prost::Enumeration
     )]
     #[repr(i32)]
     pub enum Status {
@@ -760,19 +761,8 @@ pub struct SetLogLevelRequest {
 #[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SetLogLevelReply {}
 /// Supported log levels in Transiter.
-#[derive(
-    serde::Serialize,
-    serde::Deserialize,
-    Clone,
-    Copy,
-    Debug,
-    PartialEq,
-    Eq,
-    Hash,
-    PartialOrd,
-    Ord,
-    ::prost::Enumeration,
-)]
+#[derive(serde::Serialize, serde::Deserialize)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, PartialOrd, Ord, ::prost::Enumeration)]
 #[repr(i32)]
 pub enum LogLevel {
     Info = 0,

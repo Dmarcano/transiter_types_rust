@@ -8,6 +8,5 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .type_attribute(".", "#[derive(serde::Serialize, serde::Deserialize)]")
         .out_dir(out_dir)
         .compile(&vec!["src/public.proto", "src/admin.proto"], &["./proto"])?;
-
     Ok(())
 }

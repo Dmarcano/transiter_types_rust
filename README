@@ -1,0 +1,3 @@
+# Transiter Rust types.
+
+For anyone working with the [transiter API](https://github.com/jamespfennell/transiter) in Rust. This crate exposes a no-std rust types for the Transiter APIs in Rust. This is mostly to unblock development in other embedded projects that want to query a transiter server in a type safe way.
