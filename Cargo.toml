@@ -1,6 +1,6 @@
 [package]
 name = "rust_transiter_types"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Diego Aristides Marcano Aranguren"]
 description = "Some generated rust types for the transiter API https://github.com/jamespfennell/transiter. Meant for no std enviromnets that have an alloc. "

@@ -680,6 +680,7 @@ pub struct System {
     pub name: ::prost::alloc::string::String,
     /// Status of the system.
     #[prost(enumeration = "system::Status", tag = "5")]
+    #[serde(deserialize_with = "super::Status::from_str")]
     pub status: i32,
     /// The system's agencies.
     #[prost(message, optional, tag = "6")]
@@ -1199,15 +1200,18 @@ pub struct Vehicle {
     pub stop: ::core::option::Option<stop::Reference>,
     /// The vehicle's current status.
     #[prost(enumeration = "vehicle::CurrentStatus", optional, tag = "10")]
+    #[serde(skip_deserializing)]
     pub current_status: ::core::option::Option<i32>,
     /// The timestamp of the last update to the vehicle's position.
     #[prost(int64, optional, tag = "11")]
     pub updated_at: ::core::option::Option<i64>,
     /// The vehicle's current congestion level.
     #[prost(enumeration = "vehicle::CongestionLevel", tag = "12")]
+    #[serde(deserialize_with = "super::CongestionLevel::from_str")]
     pub congestion_level: i32,
     /// The vehicle's current occupancy status.
     #[prost(enumeration = "vehicle::OccupancyStatus", optional, tag = "13")]
+    #[serde(skip_deserializing)]
     pub occupancy_status: ::core::option::Option<i32>,
     /// The percentage of seats occupied.
     #[prost(int32, optional, tag = "14")]
@@ -1415,12 +1419,15 @@ pub struct Route {
     pub sort_order: ::core::option::Option<i32>,
     /// Continuous pickup policy. This is the `continuous_pickup` column in `routes.txt`.
     #[prost(enumeration = "route::ContinuousPolicy", tag = "11")]
+    #[serde(deserialize_with = "super::ContinuousPolicy::from_str")]
     pub continuous_pickup: i32,
     /// Continuous dropoff policy. This is the `continuous_dropoff` column in `routes.txt`.
     #[prost(enumeration = "route::ContinuousPolicy", tag = "12")]
+    #[serde(deserialize_with = "super::ContinuousPolicy::from_str")]
     pub continuous_drop_off: i32,
     /// Type of the route. This is the `route_type` column in `routes.txt`.
     #[prost(enumeration = "route::Type", tag = "13")]
+    #[serde(deserialize_with = "super::RouteType::from_str")]
     pub r#type: i32,
     /// Agency this route is associated to.
     ///
@@ -1767,9 +1774,11 @@ pub struct Alert {
     pub system: ::core::option::Option<system::Reference>,
     /// Cause of the alert. This corresponds to the `cause` field in the realtime alert message.
     #[prost(enumeration = "alert::Cause", tag = "4")]
+    #[serde(deserialize_with = "super::Cause::from_str")]
     pub cause: i32,
     /// Effect of the alert. This corresponds to the `effect` field in the realtime alert message.
     #[prost(enumeration = "alert::Effect", tag = "5")]
+    #[serde(deserialize_with = "super::Effect::from_str")]
     pub effect: i32,
     /// The current active period, if the alert is currently active.
     /// If the alert is not active this is empty.
@@ -2015,6 +2024,7 @@ pub struct Transfer {
     pub to_stop: ::core::option::Option<stop::Reference>,
     /// Type of the transfer.
     #[prost(enumeration = "transfer::Type", tag = "6")]
+    #[serde(deserialize_with = "super::TransferType::from_str")]
     pub r#type: i32,
     /// Minimum time required for the transfer, in seconds. This is the `min_transfer_time` column in `transfers.txt`.
     #[prost(int32, optional, tag = "7")]
