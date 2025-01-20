@@ -9,7 +9,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         // default message vectors to be empty
         .message_attribute(".",  "#[serde(default)]")
         // TODO: Add support for other enums
-        .field_attribute(".transiter_public_types.Stop.type", 
+        .field_attribute(".public_api_types.Stop.type", 
     "#[serde(deserialize_with = \"super::Type::from_str\")]").out_dir(out_dir)
         .compile(&vec!["src/public.proto", "src/admin.proto"], &["./proto"])?;
     Ok(())

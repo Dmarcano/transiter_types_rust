@@ -857,6 +857,7 @@ pub struct Stop {
     pub url: ::core::option::Option<::prost::alloc::string::String>,
     /// Type of the stop. This is the `platform_type` column in `stops.txt`.
     #[prost(enumeration = "stop::Type", tag = "11")]
+    #[serde(deserialize_with = "super::Type::from_str")]
     pub r#type: i32,
     /// Parent stop. This is determined using the `parent_station` column in `stops.txt`.
     #[prost(message, optional, tag = "12")]
