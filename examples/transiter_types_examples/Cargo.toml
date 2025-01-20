@@ -1,0 +1,9 @@
+[package]
+name = "transiter_types_examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = {version = "0.12.12", features = ["blocking", "json"]}
+transiter_types_no_std ={ path = "../../." }
+serde = { version = "1.0.152", features = ["derive"] }
