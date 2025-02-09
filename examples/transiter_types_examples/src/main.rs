@@ -8,24 +8,17 @@ struct ApiResponse {
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let response =
-        reqwest::blocking::get("https://demo.transiter.dev/systems/us-ny-subway/stops?limit=1")?;
+        reqwest::blocking::get("https://demo.transiter.dev/systems/us-ny-subway/stops/R09")?;
 
     if !response.status().is_success() {
         return Err("request failed".into());
     }
 
-    // let api_response: ApiResponse = response.json()?;
     let text = response.text()?;
-    print!("{}", text);
 
-    let api_response: ApiResponse = serde_json::from_str(&text)?;
-    let stations = api_response.stops;
-    print!("{:?}", stations);
+    let api_response: Stop = serde_json::from_str(&text)?;
+    print!("{:#?}", api_response);
 
-    // println!("Found {} NYC subway stations:", stations.len());
-
-    // for stop in stations{
-    //     println!("Name: {:#?}\nid: {:#?}\nchild stops: {:#?}\n", stop.name, stop.id, stop.stop_times );
-    // }
+  
     Ok(())
 }

@@ -1,0 +1,1238 @@
+{
+  "id":  "R09",
+  "resource":  null,
+  "system":  null,
+  "name":  "Queensboro Plaza",
+  "latitude":  40.750582,
+  "longitude":  -73.940202,
+  "type":  "STATION",
+  "childStops":  [
+    {
+      "id":  "R09N",
+      "resource":  {
+        "path":  "systems/us-ny-subway/stops/R09N",
+        "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+      },
+      "system":  {
+        "id":  "us-ny-subway",
+        "resource":  {
+          "path":  "systems/us-ny-subway",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+        }
+      },
+      "name":  "Queensboro Plaza"
+    },
+    {
+      "id":  "R09S",
+      "resource":  {
+        "path":  "systems/us-ny-subway/stops/R09S",
+        "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09S"
+      },
+      "system":  {
+        "id":  "us-ny-subway",
+        "resource":  {
+          "path":  "systems/us-ny-subway",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+        }
+      },
+      "name":  "Queensboro Plaza"
+    }
+  ],
+  "serviceMaps":  [
+    {
+      "configId":  "alltimes",
+      "routes":  [
+        {
+          "id":  "W",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/W",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/W"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        }
+      ]
+    },
+    {
+      "configId":  "realtime",
+      "routes":  [
+        {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        }
+      ]
+    },
+    {
+      "configId":  "weekday",
+      "routes":  [
+        {
+          "id":  "W",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/W",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/W"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        }
+      ]
+    },
+    {
+      "configId":  "weeknight",
+      "routes":  [
+        {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        }
+      ]
+    },
+    {
+      "configId":  "weekend",
+      "routes":  [
+        {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        }
+      ]
+    }
+  ],
+  "alerts":  [
+    {
+      "id":  "lmm:alert:407621",
+      "resource":  {
+        "path":  "systems/us-ny-subway/alerts/lmm:alert:407621",
+        "url":  "https://demo.transiter.dev/systems/us-ny-subway/alerts/lmm:alert:407621"
+      },
+      "system":  {
+        "id":  "us-ny-subway",
+        "resource":  {
+          "path":  "systems/us-ny-subway",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+        }
+      },
+      "cause":  "TECHNICAL_PROBLEM",
+      "effect":  "MODIFIED_SERVICE"
+    },
+    {
+      "id":  "lmm:planned_work:22263",
+      "resource":  {
+        "path":  "systems/us-ny-subway/alerts/lmm:planned_work:22263",
+        "url":  "https://demo.transiter.dev/systems/us-ny-subway/alerts/lmm:planned_work:22263"
+      },
+      "system":  {
+        "id":  "us-ny-subway",
+        "resource":  {
+          "path":  "systems/us-ny-subway",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+        }
+      },
+      "cause":  "MAINTENANCE",
+      "effect":  "MODIFIED_SERVICE"
+    }
+  ],
+  "stopTimes":  [
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "060000_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/060000_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/060000_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "vehicle":  {
+          "id":  "1N 1000 STL/DIT",
+          "resource":  {
+            "path":  "systems/us-ny-subway/vehicles/1N 1000 STL/DIT",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1000 STL/DIT"
+          }
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "vehicle":  {
+        "id":  "1N 1000 STL/DIT",
+        "resource":  {
+          "path":  "systems/us-ny-subway/vehicles/1N 1000 STL/DIT",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1000 STL/DIT"
+        }
+      },
+      "arrival":  {
+        "time":  "1739118383"
+      },
+      "departure":  {
+        "time":  "1739118383"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "062000_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/062000_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/062000_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "vehicle":  {
+          "id":  "1N 1020 STL/DIT",
+          "resource":  {
+            "path":  "systems/us-ny-subway/vehicles/1N 1020 STL/DIT",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1020 STL/DIT"
+          }
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "vehicle":  {
+        "id":  "1N 1020 STL/DIT",
+        "resource":  {
+          "path":  "systems/us-ny-subway/vehicles/1N 1020 STL/DIT",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1020 STL/DIT"
+        }
+      },
+      "arrival":  {
+        "time":  "1739118877"
+      },
+      "departure":  {
+        "time":  "1739118877"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "064000_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/064000_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/064000_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "vehicle":  {
+          "id":  "1N 1040 STL/DIT",
+          "resource":  {
+            "path":  "systems/us-ny-subway/vehicles/1N 1040 STL/DIT",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1040 STL/DIT"
+          }
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "vehicle":  {
+        "id":  "1N 1040 STL/DIT",
+        "resource":  {
+          "path":  "systems/us-ny-subway/vehicles/1N 1040 STL/DIT",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1040 STL/DIT"
+        }
+      },
+      "arrival":  {
+        "time":  "1739119606"
+      },
+      "departure":  {
+        "time":  "1739119606"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "066000_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/066000_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/066000_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "vehicle":  {
+          "id":  "1N 1100 STL/DIT",
+          "resource":  {
+            "path":  "systems/us-ny-subway/vehicles/1N 1100 STL/DIT",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1100 STL/DIT"
+          }
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "vehicle":  {
+        "id":  "1N 1100 STL/DIT",
+        "resource":  {
+          "path":  "systems/us-ny-subway/vehicles/1N 1100 STL/DIT",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1100 STL/DIT"
+        }
+      },
+      "arrival":  {
+        "time":  "1739120507"
+      },
+      "departure":  {
+        "time":  "1739120507"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "067450_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/067450_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/067450_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "vehicle":  {
+          "id":  "1N 1114+ STL/DIT",
+          "resource":  {
+            "path":  "systems/us-ny-subway/vehicles/1N 1114+ STL/DIT",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1114+ STL/DIT"
+          }
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "vehicle":  {
+        "id":  "1N 1114+ STL/DIT",
+        "resource":  {
+          "path":  "systems/us-ny-subway/vehicles/1N 1114+ STL/DIT",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/vehicles/1N 1114+ STL/DIT"
+        }
+      },
+      "arrival":  {
+        "time":  "1739121322"
+      },
+      "departure":  {
+        "time":  "1739121322"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "069400_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/069400_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/069400_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "arrival":  {
+        "time":  "1739122560"
+      },
+      "departure":  {
+        "time":  "1739122560"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "071400_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/071400_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/071400_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "arrival":  {
+        "time":  "1739123910"
+      },
+      "departure":  {
+        "time":  "1739123910"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "073400_N..N34R",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/073400_N..N34R",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/073400_N..N34R"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "R01N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/R01N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Astoria-Ditmars Blvd"
+        },
+        "directionId":  false
+      },
+      "destination":  {
+        "id":  "R01N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R01N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R01N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Astoria-Ditmars Blvd"
+      },
+      "arrival":  {
+        "time":  "1739125050"
+      },
+      "departure":  {
+        "time":  "1739125050"
+      },
+      "future":  true,
+      "stopSequence":  25,
+      "headsign":  "Astoria - Flushing",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09S",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09S",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09S"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "068850_N..S36X008",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/068850_N..S36X008",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/068850_N..S36X008"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "D43S",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/D43S",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/D43S"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Coney Island-Stillwell Av"
+        },
+        "directionId":  true
+      },
+      "destination":  {
+        "id":  "D43S",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/D43S",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/D43S"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Coney Island-Stillwell Av"
+      },
+      "arrival":  {
+        "time":  "1739118990"
+      },
+      "departure":  {
+        "time":  "1739118990"
+      },
+      "future":  true,
+      "stopSequence":  2,
+      "headsign":  "Manhattan",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09S",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09S",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09S"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "071000_N..S36X008",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/071000_N..S36X008",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/071000_N..S36X008"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "D43S",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/D43S",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/D43S"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Coney Island-Stillwell Av"
+        },
+        "directionId":  true
+      },
+      "destination":  {
+        "id":  "D43S",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/D43S",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/D43S"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Coney Island-Stillwell Av"
+      },
+      "arrival":  {
+        "time":  "1739120280"
+      },
+      "departure":  {
+        "time":  "1739120280"
+      },
+      "future":  true,
+      "stopSequence":  2,
+      "headsign":  "Manhattan",
+      "track":  "G2"
+    },
+    {
+      "stop":  {
+        "id":  "R09S",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09S",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09S"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "trip":  {
+        "id":  "073350_N..S36X008",
+        "resource":  {
+          "path":  "systems/us-ny-subway/routes/N/trips/073350_N..S36X008",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N/trips/073350_N..S36X008"
+        },
+        "route":  {
+          "id":  "N",
+          "resource":  {
+            "path":  "systems/us-ny-subway/routes/N",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/routes/N"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "color":  "FCCC0A"
+        },
+        "destination":  {
+          "id":  "D43S",
+          "resource":  {
+            "path":  "systems/us-ny-subway/stops/D43S",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/D43S"
+          },
+          "system":  {
+            "id":  "us-ny-subway",
+            "resource":  {
+              "path":  "systems/us-ny-subway",
+              "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+            }
+          },
+          "name":  "Coney Island-Stillwell Av"
+        },
+        "directionId":  true
+      },
+      "destination":  {
+        "id":  "D43S",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/D43S",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/D43S"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Coney Island-Stillwell Av"
+      },
+      "arrival":  {
+        "time":  "1739121690"
+      },
+      "departure":  {
+        "time":  "1739121690"
+      },
+      "future":  true,
+      "stopSequence":  2,
+      "headsign":  "Manhattan",
+      "track":  "G2"
+    }
+  ],
+  "transfers":  [
+    {
+      "id":  "R09_to_718",
+      "resource":  null,
+      "system":  null,
+      "fromStop":  {
+        "id":  "R09",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "toStop":  {
+        "id":  "718",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/718",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/718"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "type":  "REQUIRES_TIME",
+      "minTransferTime":  0
+    }
+  ],
+  "headsignRules":  [
+    {
+      "stop":  {
+        "id":  "R09N",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09N",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09N"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "priority":  906,
+      "headsign":  "Astoria - Flushing"
+    },
+    {
+      "stop":  {
+        "id":  "R09S",
+        "resource":  {
+          "path":  "systems/us-ny-subway/stops/R09S",
+          "url":  "https://demo.transiter.dev/systems/us-ny-subway/stops/R09S"
+        },
+        "system":  {
+          "id":  "us-ny-subway",
+          "resource":  {
+            "path":  "systems/us-ny-subway",
+            "url":  "https://demo.transiter.dev/systems/us-ny-subway"
+          }
+        },
+        "name":  "Queensboro Plaza"
+      },
+      "priority":  907,
+      "headsign":  "Manhattan"
+    }
+  ]
+}
