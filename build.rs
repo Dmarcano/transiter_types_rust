@@ -42,8 +42,16 @@ pub fn add_enum_serialization(mut builder: Builder) -> Builder {
             "#[serde(deserialize_with = \"super::Cause::from_str\")]",
         )
         .field_attribute(
+            ".public_api_types.Alert.Reference.cause",
+            "#[serde(deserialize_with = \"super::super::Cause::from_str\")]",
+        )
+        .field_attribute(
             ".public_api_types.Alert.effect",
             "#[serde(deserialize_with = \"super::Effect::from_str\")]",
+        )
+        .field_attribute(
+            ".public_api_types.Alert.Reference.effect",
+            "#[serde(deserialize_with = \"super::super::Effect::from_str\")]",
         )
         .field_attribute(
             ".public_api_types.Route.continuous_pickup",

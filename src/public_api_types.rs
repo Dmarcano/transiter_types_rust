@@ -1915,9 +1915,11 @@ pub mod alert {
         pub system: ::core::option::Option<super::system::Reference>,
         /// Same as the parent message.
         #[prost(enumeration = "Cause", tag = "4")]
+        #[serde(deserialize_with = "super::super::Cause::from_str")]
         pub cause: i32,
         /// Same as the parent message.
         #[prost(enumeration = "Effect", tag = "5")]
+        #[serde(deserialize_with = "super::super::Effect::from_str")]
         pub effect: i32,
     }
     /// Cause is the same as the [cause enum in the GTFS realtime
