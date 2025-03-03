@@ -1069,7 +1069,7 @@ dependencies = [
 
 [[package]]
 name = "rust_transiter_types"
-version = "0.1.4"
+version = "0.1.5"
 dependencies = [
  "prost 0.13.5",
  "serde",
