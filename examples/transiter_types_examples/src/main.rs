@@ -22,3 +22,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
   
     Ok(())
 }
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn from_string() {
+        let path = std::env::current_dir().unwrap();
+        println!("The current directory is {}", path.display());
+        let path = "./src/example_technical_problem.json";
+        let contents = std::fs::read_to_string(path).unwrap();
+        let _parsed: Stop = serde_json::from_str(&contents).unwrap();
+    }
+
+}
