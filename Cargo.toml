@@ -2,7 +2,7 @@ cargo-features = ["edition2024"]
 
 [package]
 name = "rust_transiter_types"
-version = "0.1.5"
+version = "0.1.6"
 edition = "2024"
 authors = ["Diego Aristides Marcano Aranguren"]
 description = "Some generated rust types for the transiter API https://github.com/jamespfennell/transiter. Meant for no std enviromnets that have an alloc. "
