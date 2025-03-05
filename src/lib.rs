@@ -2,8 +2,12 @@
 pub mod admi_api_types;
 pub mod public_api_types;
 
+extern crate alloc;
+
+use alloc::fmt::Display;
+
 use serde::{Deserialize, Deserializer};
-use serde_aux::field_attributes::deserialize_number_from_string;
+use alloc::str::FromStr;
 
 use crate::public_api_types::{
     alert::{Cause, Effect},
@@ -13,6 +17,25 @@ use crate::public_api_types::{
     transfer::Type as TransferType,
     vehicle::{CongestionLevel, CurrentStatus, OccupancyStatus},
 };
+
+pub fn deserialize_number_from_string<'de, T, D>(deserializer: D) -> Result<T, D::Error>
+where
+    D: Deserializer<'de>,
+    T: FromStr + Deserialize<'de>,
+    <T as FromStr>::Err: Display,
+{
+    #[derive(Deserialize)]
+    #[serde(untagged)]
+    enum StringOrInt<T> {
+        String(String),
+        Number(T),
+    }
+
+    match StringOrInt::<T>::deserialize(deserializer)? {
+        StringOrInt::String(s) => s.parse::<T>().map_err(serde::de::Error::custom),
+        StringOrInt::Number(i) => Ok(i),
+    }
+}
 
 pub fn callback_i64_to_option<'de, D>(deserializer: D) -> Result<Option<i64>, D::Error>
 where

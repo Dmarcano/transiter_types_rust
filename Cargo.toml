@@ -2,7 +2,7 @@ cargo-features = ["edition2024"]
 
 [package]
 name = "rust_transiter_types"
-version = "0.1.6"
+version = "0.1.7"
 edition = "2024"
 authors = ["Diego Aristides Marcano Aranguren"]
 description = "Some generated rust types for the transiter API https://github.com/jamespfennell/transiter. Meant for no std enviromnets that have an alloc. "
@@ -12,10 +12,8 @@ license = "MIT"
 
 [dependencies]
 prost = { version = "0.13.4", default-features = false, features = ["prost-derive"] }
-serde = {version = "^1.0", features = ["derive", ], default-features = false}
+serde = {version = "^1.0", features = ["derive", "alloc"], default-features = false}
 serde-json-core = "^0.6"
-# serde_json = "1.0.137"
-serde-aux = "4.5.0"
 
 [features]
 default = ["std"] 
